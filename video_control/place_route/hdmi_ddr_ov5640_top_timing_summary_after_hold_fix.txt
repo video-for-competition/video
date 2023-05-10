@@ -1,0 +1,160 @@
+Design Summary : All Constraints Met.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk                sys_clk                     14.442       0.000              0            330
+ ddrphy_clkin           ddrphy_clkin                 2.337       0.000              0          16629
+ ioclk0                 ioclk0                       1.692       0.000              0             24
+ ioclk1                 ioclk1                       1.692       0.000              0             72
+ cmos1_pclk             cmos1_pclk                   9.245       0.000              0             64
+ cmos1_pclk_16bit       cmos1_pclk_16bit            20.231       0.000              0            351
+ pix_clk                pix_clk                      9.869       0.000              0            896
+ cfg_clk                cfg_clk                     94.432       0.000              0           1095
+ hdmi_ddr_ov5640_top|pixclk_in
+                        hdmi_ddr_ov5640_top|pixclk_in
+                                                   996.893       0.000              0            277
+ sys_clk|u_pll/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll/u_pll_e3/CLKOUT2_Inferred
+                                                    37.122       0.000              0             31
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk                sys_clk                      0.312       0.000              0            330
+ ddrphy_clkin           ddrphy_clkin                 0.227       0.000              0          16629
+ ioclk0                 ioclk0                       0.450       0.000              0             24
+ ioclk1                 ioclk1                       0.450       0.000              0             72
+ cmos1_pclk             cmos1_pclk                   0.200       0.000              0             64
+ cmos1_pclk_16bit       cmos1_pclk_16bit             0.200       0.000              0            351
+ pix_clk                pix_clk                      0.313       0.000              0            896
+ cfg_clk                cfg_clk                      0.339       0.000              0           1095
+ hdmi_ddr_ov5640_top|pixclk_in
+                        hdmi_ddr_ov5640_top|pixclk_in
+                                                     0.342       0.000              0            277
+ sys_clk|u_pll/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll/u_pll_e3/CLKOUT2_Inferred
+                                                     0.427       0.000              0             31
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk                sys_clk                     16.319       0.000              0             64
+ ddrphy_clkin           ddrphy_clkin                 4.885       0.000              0           2278
+ cmos1_pclk_16bit       cmos1_pclk_16bit            21.189       0.000              0              8
+ pix_clk                pix_clk                     12.247       0.000              0             16
+ cfg_clk                cfg_clk                     95.905       0.000              0              1
+ hdmi_ddr_ov5640_top|pixclk_in
+                        hdmi_ddr_ov5640_top|pixclk_in
+                                                   997.471       0.000              0              8
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk                sys_clk                      0.736       0.000              0             64
+ ddrphy_clkin           ddrphy_clkin                 0.423       0.000              0           2278
+ cmos1_pclk_16bit       cmos1_pclk_16bit             1.051       0.000              0              8
+ pix_clk                pix_clk                      1.053       0.000              0             16
+ cfg_clk                cfg_clk                      2.248       0.000              0              1
+ hdmi_ddr_ov5640_top|pixclk_in
+                        hdmi_ddr_ov5640_top|pixclk_in
+                                                     0.630       0.000              0              8
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk                sys_clk                     16.083       0.000              0            330
+ ddrphy_clkin           ddrphy_clkin                 4.509       0.000              0          16629
+ ioclk0                 ioclk0                       1.834       0.000              0             24
+ ioclk1                 ioclk1                       1.834       0.000              0             72
+ cmos1_pclk             cmos1_pclk                   9.917       0.000              0             64
+ cmos1_pclk_16bit       cmos1_pclk_16bit            21.157       0.000              0            351
+ pix_clk                pix_clk                     11.289       0.000              0            896
+ cfg_clk                cfg_clk                     96.043       0.000              0           1095
+ hdmi_ddr_ov5640_top|pixclk_in
+                        hdmi_ddr_ov5640_top|pixclk_in
+                                                   997.771       0.000              0            277
+ sys_clk|u_pll/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll/u_pll_e3/CLKOUT2_Inferred
+                                                    38.000       0.000              0             31
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk                sys_clk                      0.251       0.000              0            330
+ ddrphy_clkin           ddrphy_clkin                 0.134       0.000              0          16629
+ ioclk0                 ioclk0                       0.383       0.000              0             24
+ ioclk1                 ioclk1                       0.383       0.000              0             72
+ cmos1_pclk             cmos1_pclk                   0.107       0.000              0             64
+ cmos1_pclk_16bit       cmos1_pclk_16bit             0.106       0.000              0            351
+ pix_clk                pix_clk                      0.251       0.000              0            896
+ cfg_clk                cfg_clk                      0.250       0.000              0           1095
+ hdmi_ddr_ov5640_top|pixclk_in
+                        hdmi_ddr_ov5640_top|pixclk_in
+                                                     0.256       0.000              0            277
+ sys_clk|u_pll/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll/u_pll_e3/CLKOUT2_Inferred
+                                                     0.334       0.000              0             31
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk                sys_clk                     17.361       0.000              0             64
+ ddrphy_clkin           ddrphy_clkin                 6.190       0.000              0           2278
+ cmos1_pclk_16bit       cmos1_pclk_16bit            21.912       0.000              0              8
+ pix_clk                pix_clk                     12.943       0.000              0             16
+ cfg_clk                cfg_clk                     97.032       0.000              0              1
+ hdmi_ddr_ov5640_top|pixclk_in
+                        hdmi_ddr_ov5640_top|pixclk_in
+                                                   998.198       0.000              0              8
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk                sys_clk                      0.532       0.000              0             64
+ ddrphy_clkin           ddrphy_clkin                 0.264       0.000              0           2278
+ cmos1_pclk_16bit       cmos1_pclk_16bit             0.664       0.000              0              8
+ pix_clk                pix_clk                      0.695       0.000              0             16
+ cfg_clk                cfg_clk                      1.603       0.000              0              1
+ hdmi_ddr_ov5640_top|pixclk_in
+                        hdmi_ddr_ov5640_top|pixclk_in
+                                                     0.454       0.000              0              8
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
